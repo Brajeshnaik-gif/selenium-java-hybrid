@@ -19,9 +19,21 @@ public class SampleTest {
 	  Thread.sleep(3000);
 	 // driver.findElement(By.id("user_login")).sendKeys("rajesh");
   }
+  
+  @Test
+  public void Naukari() {
+	  driver.get("https://www.instagram.com");
+	  driver.navigate().to("https://flipkart.com");
+	  driver.navigate().forward();
+	  driver.navigate().back();
+	  driver.navigate().refresh();
+  }
+  
   @BeforeTest
   public void beforeTest() {
 	   driver = new ChromeDriver();
+	   driver.manage().window().maximize();
+	   
 	   
   }
 
