@@ -27,7 +27,7 @@ public class SampleTest {
 	  driver.navigate().forward();
 	  driver.navigate().back();
 	  driver.navigate().refresh();
-	  //sample-items
+	  //sample
   }
   
   @BeforeTest
